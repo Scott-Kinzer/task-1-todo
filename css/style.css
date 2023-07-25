@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(171, 133, 133);
+  padding: 20px;
+}
+
+.header-notes {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  background-color: rgb(197, 181, 181);
+  border-radius: 5px;
+}
+.header-notes div {
+  margin: auto;
+}
+.header-notes .icons-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.header-notes .icons-header .archive-icon {
+  margin-right: unset;
+}
+.header-notes .icons-header .archive-icon img {
+  width: 20px;
+}
+.header-notes .icons-header .trash-icon {
+  margin-right: unset;
+}
+.header-notes .icons-header .trash-icon img {
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
