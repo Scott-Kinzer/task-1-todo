@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task 1</title>
+</head>
+<body>
+    <header class="header-notes">
+        <div>
+            <p>Name</p>
+        </div>
+        <div>
+            <p>Created</p>
+        </div>
+        <div>
+            <p>Category</p>
+        </div>
+        <div>
+            <p>Content</p>
+        </div>
+        <div>
+            <p>Dates</p>
+        </div>
+        <div class="icons-header">
+            <div class="archive-icon">
+                <img src="./images/icons/archive.svg" alt="archive" srcset="">
+            </div>
+            <div class="trash-icon">
+                <img src="./images/icons/trash.svg" alt="trash" srcset="">
+            </div>
+        </div>
+    </header>
+
+    <div class="notes">
+        <div class="note-item">
+            <div class="note-name">
+                <img src="./images/task-icons/cart.svg" alt="">
+                <p>Shopping list</p>
+            </div>
+            <div class="note-created">
+                <p>April 20, 2021</p>
+            </div>
+            <div class="note-category">
+                <p>Random thought</p>
+            </div>
+            <div class="note-content">
+                <p>The evolution</p>
+            </div>
+            <div class="note-date">
+                <p>3/5/2021, 5/5/2021</p>
+            </div>
+            <div class="note-icons">
+                <img src="./images/icons/edit.svg" alt="edit">
+                <img src="./images/icons/archive.svg" alt="archive">
+                <img src="./images/icons/trash.svg" alt="trash">
+            </div>
+        </div>
+    </div>
+
+    <button class="button-note-create">Create note</button>
+
+    <form class="hide note-form">
+        <input id="note-form-name" placeholder="Note name" type="text">
+        <input id="note-form-content" placeholder="Note content" type="text">
+        <select name="form-category" id="note-form-category">
+            <option value="task">Task</option>
+            <option value="thought">Random Thought</option>
+            <option value="idea">Idea</option>
+            <option value="quote">Quote</option>
+        </select>
+        <button type="submit">Submit form</button>
+    </form>
+
+    <div class="summary">
+        <div class="header-summary">
+            <div>Note Category</div>
+            <div>Active</div>
+            <div>Archived</div>
+        </div>
+        <div class="summary-inner"></div>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "uuid": "https://cdn.skypack.dev/uuid"
+          }
+        }
+      </script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
